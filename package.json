@@ -1,0 +1,26 @@
+{
+  "name": "hotel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "watch:typescript": "npx tsc --watch",
+      "watch:app": "npx nodemon -r dotenv/config dist/index.js",
+      "start": "npx concurrently npm:watch:typescript npm:watch:app",
+      "package.json.dist": "think about package.json.dist"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.8",
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
